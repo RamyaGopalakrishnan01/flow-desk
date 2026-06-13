@@ -1,25 +1,91 @@
-# flow-desk
-FlowDesk – A modern productivity dashboard for managing tasks, tracking goals, planning workflows, and improving daily productivity through a clean and intuitive interface.
+# FlowDesk — Personal Productivity Dashboard
 
-# FlowDesk
+A complete, production-quality productivity web app built with **React + Vite + Tailwind CSS**.
 
-FlowDesk is a productivity-focused web application designed to help users organize tasks, track goals, manage schedules, and monitor progress from a single dashboard.
+> **Copyright © 2026 Ramya Gopalakrishnan. All Rights Reserved.**
 
-## Features
-- User Authentication
-- Task Management
-- Goal Tracking
-- Productivity Analytics
-- Planner & Calendar
-- Responsive Design
-- Dark & Light Mode
-- Personalized Dashboard
+---
+
+## Demo Credentials
+
+```
+Email:    demo@productivity.app
+Password: demo123
+```
+
+---
+
+## Getting Started
+
+```bash
+# 1. Enter the project folder
+cd productivity-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Start dev server
+npm run dev
+```
+
+Open **http://localhost:5173** in your browser.
+
+## Build for Production
+
+```bash
+npm run build
+npm run preview
+```
+
+---
 
 ## Tech Stack
-- React
-- TypeScript
-- Tailwind CSS
 
-## Project Overview
-FlowDesk provides a centralized workspace for users to stay organized, maintain focus, and improve productivity through effective planning and progress tracking.
+- React 18 + React Router v6
+- Tailwind CSS v3 (dark mode)
+- Recharts (analytics charts)
+- Lucide React (icons)
+- Context API + LocalStorage
 
+---
+
+## Features
+
+- Landing page (Hero / Features / Stats / Testimonials / CTA)
+- Auth: Login, Register, Forgot Password, Remember Me, session persistence
+- Dashboard Overview with stat cards and quick actions
+- Task Management — CRUD, priority, category, due date, search/filter
+- Goal Tracking — progress bars, target dates, milestones
+- Daily Planner — hour blocks, add/delete/complete activities
+- Calendar — monthly view, click dates to see events
+- Analytics — bar, line, pie charts (Recharts)
+- AI Assistant — mock suggestions, interactive chat UI
+- Profile & Settings — edit profile, password UI, dark mode toggle, notifications
+- Fully responsive: mobile, tablet, desktop
+- Dark / Light mode with persistence
+
+---
+
+## Project Structure
+
+```
+src/
+├── App.jsx                     # Router + providers
+├── context/AppContext.jsx      # Unified auth + data state
+├── components/layout/          # Sidebar, DashboardLayout, Footer, LandingNav
+├── components/ui/              # Modal, ProtectedRoute
+└── pages/
+    ├── LandingPage.jsx
+    ├── LoginPage.jsx
+    ├── RegisterPage.jsx
+    ├── ForgotPasswordPage.jsx
+    └── dashboard/
+        ├── OverviewPage.jsx
+        ├── TasksPage.jsx
+        ├── GoalsPage.jsx
+        ├── PlannerPage.jsx
+        ├── CalendarPage.jsx
+        ├── AnalyticsPage.jsx
+        ├── AIAssistantPage.jsx
+        └── ProfilePage.jsx
+```
